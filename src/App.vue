@@ -10,7 +10,7 @@ export default {
   name: "app",
   methods: {
     async getData() {
-      const data = await fetch("/api/info").then((res) => res.json());
+      const data = await fetch("/api/info?uuid=test").then((res) => res.json());
       console.log(data);
     },
   },
